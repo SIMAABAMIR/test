@@ -1,14 +1,21 @@
-id: chrapp
-name: chrapp
-description: text abt app
-version: 1.0
-workflow: 
+id: PhyloPGM
+name: PhyloPGM
+description: runs PhyloPGM
+version: 1.0.2
+workflow:
+  steps:
+    - name: running PhyloPGM
+      cmd: /bin/cat $input
+      bash: true
+  inputs:
+    - id: input
+      description: Genomic Location(s)
+      type: local_file
 
-  steps: 
-  - name: testing
-    cmd: /bin/echo "test in progress"
-  
-  inputs: 
-  - id: input
-    description: input
-    type: text
+  outputs:
+    - id: output
+      description: Output Folder
+      type: local_folder
+      mergeOutput: false
+      download: true
+      zip: false
