@@ -5,12 +5,12 @@ version: 1.0
 workflow:
   steps:
     - name: running pcm
-      cmd: /bin/cat $input
+      cmd: /bin/echo $input
       bash: true
   inputs:
     - id: input
       description: Genomic Location(s)
-      type: local_file
+      type: text
 
   outputs:
     - id: output
