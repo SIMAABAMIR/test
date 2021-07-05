@@ -1,14 +1,14 @@
-id : chrapp
-name : chrapp
-description : text abt app
-version : 1.0
-workflow : 
+id: chrapp
+name: chrapp
+description: text abt app
+version: 1.0
+workflow: 
 
-  steps : 
-  -name : testing
-  cmd : /bin/echo "test in progress"
+  steps: 
+  - name: testing
+    cmd: /bin/echo "test in progress"
   
-  inputs : 
-  -id : input
-  description : input
-  type : text
+  inputs: 
+  - id: input
+    description: input
+    type: text
