@@ -1,10 +1,10 @@
-id: PhyloPGM
-name: PhyloPGM
-description: runs PhyloPGM
-version: 1.0.2
+id: pcm
+name: pcm
+description: runs pcm
+version: 1.0
 workflow:
   steps:
-    - name: running PhyloPGM
+    - name: running pcm
       cmd: /bin/cat $input
       bash: true
   inputs:
